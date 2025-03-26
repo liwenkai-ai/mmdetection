@@ -40,6 +40,8 @@ from .transformer import (MLP, AdaptivePadding, CdnQueryGenerator,
 
 # yapf: enable
 
+from .hierarchical_cross_attn import HierarchicalCrossAttention
+
 __all__ = [
     'fast_nms', 'multiclass_nms', 'mask_matrix_nms', 'DropBlock',
     'PixelDecoder', 'TransformerEncoderPixelDecoder',
@@ -61,5 +63,5 @@ __all__ = [
     'ConditionalDetrTransformerDecoderLayer', 'DinoTransformerDecoder',
     'CdnQueryGenerator', 'Mask2FormerTransformerEncoder',
     'Mask2FormerTransformerDecoderLayer', 'Mask2FormerTransformerDecoder',
-    'SinePositionalEncoding3D', 'FrozenBatchNorm2d'
+    'SinePositionalEncoding3D', 'FrozenBatchNorm2d', 'HierarchicalCrossAttention'
 ]
